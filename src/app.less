@@ -1,0 +1,43 @@
+/* 设置多行文本溢出时显示省略号 */
+.textEllipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 控制显示的行数 */
+  text-overflow: ellipsis;
+}
+
+.singleLine {
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  text-overflow: ellipsis; /* 显示省略号 */
+}
+
+/* 滚动条整体样式 */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+/* 滚动条滑块样式 */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(124, 124, 124, 0.2);
+  border-radius: 5px;
+}
+
+/* 滚动条轨道样式 */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@keyframes generateNewText {
+  0% {
+    // transform: scale(1.5);
+    // color: $uni-primary;
+    color: red;
+  }
+  100% {
+    // transform: scale(1);
+    color: #333;
+  }
+}

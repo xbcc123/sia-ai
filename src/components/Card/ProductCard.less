@@ -1,0 +1,38 @@
+.productCard {
+  flex: 0 0 calc((100% - 32px * 2) / 3);
+  border: 1px solid #775d83;
+  border-radius: 10px;
+  cursor: pointer;
+  &Color1 {
+    background: linear-gradient(215deg, #5c0a85, #94595900);
+  }
+  &Color2 {
+    background: linear-gradient(215deg, #40347e, #94595900);
+  }
+  &Color3 {
+    background: linear-gradient(215deg, #1e457f, #94595900);
+  }
+
+  &:hover {
+	transition: all .3s linear;
+	transform: scale(1.01);
+	box-shadow: 1px 3px 13px 1px #9a05e0
+  }
+}
+
+.top {
+	font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+	.subTitle {
+		margin-left: 4px;
+		font-size: 14px;
+		color: #eee;
+	}
+}
+
+.bottom {
+	text-indent: 30px;
+	line-height: 2;
+	padding: 12px;
+}
