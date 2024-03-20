@@ -5,12 +5,10 @@ import zhCN from 'antd/locale/zh_CN';
 
 export default defineConfig({
   plugins: [
-	// require.resolve('../plugins/html.ts'), 
   	require.resolve("umi-plugin-antd-style")
 ],
  outputPath: "sia-ai",
   antd: {
-    // configProvider
     configProvider: {
 		locale: zhCN,
     },
@@ -41,9 +39,6 @@ export default defineConfig({
   ],
   esbuildMinifyIIFE: true,
   history: { type: 'browser' },
-  //   theme: {
-  //     '@primary-color': '#7848f1',
-  //   },
   hash: true,
   access: {},
   initialState: {},
